@@ -62,14 +62,8 @@ class Visitor {
             "last_name",
             "email_address",
             "created_at",
-        ]);
-    }
-    public function getVisitorsV2() {
-        return $this->connect_database()->select("wp_visitors", [
-            "first_name",
-            "last_name",
-            "email_address",
-            "created_at",
+        ], [
+            "ORDER" => ["created_at" => "DESC"]
         ]);
     }
 
