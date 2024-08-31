@@ -26,6 +26,8 @@ define('DB_PASS_PLUGIN', '');
 
 require  TW_ADMIN_DIR . 'VisitorTable.php';
 require  TW_ADMIN_DIR . 'FormSetup.php';
+require  TW_ADMIN_DIR . 'ActivitionPlugin.php';
 
 $visitor_table = new VisitorTable();
 $form_setup = new FormSetup();
+new ActivitionPlugin();

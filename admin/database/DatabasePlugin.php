@@ -12,14 +12,17 @@ class DatabasePlugin {
     private $pass = DB_PASS_PLUGIN;
 
     private $connection;
-
+    
     public function __construct() {
+        global $wpdb;
         $this->connection = new Medoo([
             'type' => $this->type,
             'host' => $this->host,
             'database' => $this->name,
             'username' => $this->user,
-            'password' => $this->pass
+            'password' => $this->pass,
+            'charset' => 'utf8mb4',
+            'prefix' => $wpdb->prefix,
         ]);
     }
 
