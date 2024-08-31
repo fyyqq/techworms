@@ -1,0 +1,7 @@
+{
+    "name": "user/visitors",
+    "description": "PHP",
+    "require": {
+        "catfan/medoo": "^2.1"
+    }
+}
