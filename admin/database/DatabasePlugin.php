@@ -22,7 +22,7 @@ class DatabasePlugin {
             'username' => $this->user,
             'password' => $this->pass,
             'charset' => 'utf8mb4',
-            'prefix' => $wpdb->prefix,
+            // 'prefix' => $wpdb->prefix,
         ]);
     }
 
